@@ -42,8 +42,11 @@ export class HomeComponent {
   //    link: ''
   //  }
   //];
-  topics = menuItems?.map(
-    (item) => item.items
+  topics = menuItems?.flatMap(
+    (item) => {
+      console.log('item', item);
+      return item.items
+    }
   );
   constructor() {
     console.log('topics', this.topics);

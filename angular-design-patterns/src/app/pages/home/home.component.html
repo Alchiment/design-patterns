@@ -2,10 +2,11 @@
     Topics
 </h1>
 <ul>
-    <!--@for(topic of topics; track topic.id) {-->
-        <!--<li>
+    @for(topic of topics; track topic.id) {
+        <li>
           <a [routerLink]="topic.link">
+            {{topic.title}}
           </a>
-        </li>-->
-    <!--}-->
+        </li>
+    }
 </ul>
