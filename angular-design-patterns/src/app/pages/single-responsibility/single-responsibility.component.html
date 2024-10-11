@@ -1,0 +1,11 @@
+<div>
+    @for(goal of goals; track goal.id) {
+        <info-goal [name]="goal.name"
+                   [description]="goal.description"
+                   [endDate]="goal.endDate"
+                   [startDate]="goal.startDate"
+                   [progress]="goal.progress"
+                   class="margin-bottom__1">
+        </info-goal>
+    }
+</div>

@@ -1,12 +1,14 @@
-import { Component } from '@angular/core';
+import { Component, input } from '@angular/core';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 
 @Component({
-  selector: 'app-progress-goal',
+  selector: 'progress-goal',
   standalone: true,
-  imports: [],
+  imports: [MatProgressSpinnerModule],
   templateUrl: './progress-goal.component.html',
   styleUrl: './progress-goal.component.scss'
 })
 export class ProgressGoalComponent {
-
+  // name = input.required<string>();
+  progress = input.required<number>();
 }

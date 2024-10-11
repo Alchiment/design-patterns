@@ -1,0 +1,18 @@
+<div class="padding-general">
+  @if(title()) {
+    <strong>{{title()}}</strong>
+  }
+  
+  @if(items()) {
+    <mat-list>
+      @for(item of items(); track item.id) {
+          <mat-list-item [routerLink]="item.link">
+            <span matListItemTitle>{{item.title}}</span>
+            @if(item.description) {
+                <span matListItemLine>{{item.description}}</span>
+            }
+          </mat-list-item>
+      }
+    </mat-list>
+  }
+</div>

@@ -1,1 +1,55 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.align-horizontally-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.align-vertically-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.align-horizontally-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.margin {
+    &-left__1 {
+        margin-left: 1rem;
+    }
+    &-right__1 {
+        margin-right: 1rem;
+    }
+    &-top__1 {
+        margin-top: 1rem;
+    }
+    &-bottom__1 {
+        margin-bottom: 1rem;
+    }
+}
+
+.padding {
+    &-general {
+        padding: 1rem;
+    }
+    &-left__1 {
+        padding-left: 1rem;
+    }
+    &-right__1 {
+        padding-right: 1rem;
+    }
+    &-top__1 {
+        padding-top: 1rem;
+    }
+    &-bottom__1 {
+        padding-bottom: 1rem;
+    }
+}
