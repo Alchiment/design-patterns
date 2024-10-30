@@ -13,6 +13,8 @@ The purpose of this repo is to bring a way of implementing the concepts of Desig
 ```
 
 ## Code execution
+
+### Vanilla JavaScript
 **design-patterns** folder should be run with NodeJS console.
 
 *Example:* ``` > node ./design-patterns/single-resposibility.js```
@@ -25,6 +27,19 @@ The purpose of this repo is to bring a way of implementing the concepts of Desig
 | 1 | 'Objective 1' | 100 |
 | 2 | 'Objective 1' | 75 |
 
-**angular-design-patterns/** folder should be run thorugh Angular server.
+---
 
-**react-design-patterns/** folder should be run thorugh Vite server.
+### Angular
+**angular-design-patterns/** folder should be run through Angular server to see demos.
+
+Each concept are separated into pages (```angular-design-patterns/src/app/pages```).
+### Single responsibility
+On page ```pages/single-responsibility/single-responsibility.component.ts``` you will see a implementation of goals,
+which is using a generic component named ```info-goal.component.ts```.
+
+In ``info-goal.component.ts`` component we are using Single Responsibility principle due to the only responsibility of this component is to show the goal information. That means it can't manipulate data directly, instead it receives data from the parent through inputs.
+
+---
+
+### React
+**react-design-patterns/** folder should be run through Vite server to see demos.
