@@ -3,7 +3,7 @@ import { RouterOutlet } from '@angular/router';
 import { ProgressGoalComponent } from './components/progress-goal/progress-goal.component';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { NavMenuComponent } from './components/nav-menu/nav-menu.component';
-import { MenuItem } from './models/menu-item.model';
+import { MenuItem } from '../../../common/models/menu-item.model';
 
 @Component({
   selector: 'app-root',

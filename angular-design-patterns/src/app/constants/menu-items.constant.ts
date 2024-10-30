@@ -1,4 +1,4 @@
-import { GroupMenuItem } from "../models/group-menu-item.model";
+import { GroupMenuItem } from "../../../../common/models/group-menu-item.model";
 
 export const menuItems: GroupMenuItem[] = [
   {

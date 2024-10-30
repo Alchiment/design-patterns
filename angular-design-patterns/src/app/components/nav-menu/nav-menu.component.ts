@@ -1,6 +1,6 @@
 import { Component, input } from '@angular/core';
 import { MatListModule } from '@angular/material/list';
-import { MenuItem } from '../../models/menu-item.model';
+import { MenuItem } from '../../../../../common/models/menu-item.model';
 import { RouterModule } from '@angular/router';
 
 @Component({
