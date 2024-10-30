@@ -32,14 +32,23 @@ The purpose of this repo is to bring a way of implementing the concepts of Desig
 ### Angular
 **angular-design-patterns/** folder should be run through Angular server to see demos.
 
-Each concept are separated into pages (```angular-design-patterns/src/app/pages```).
-### Single responsibility
-On page ```pages/single-responsibility/single-responsibility.component.ts``` you will see a implementation of goals,
-which is using a generic component named ```info-goal.component.ts```.
+### React
+**react-design-patterns/** folder should be run through Vite server to see demos.
 
-In ``info-goal.component.ts`` component we are using Single Responsibility principle due to the only responsibility of this component is to show the goal information. That means it can't manipulate data directly, instead it receives data from the parent through inputs.
+Each concept are separated into pages: 
+- Angular: ```angular-design-patterns/src/app/pages```
+- React: ```react-design-patterns/src/pages```
+
+## Single responsibility
+- Angular / Single responsibility page: ```pages/single-responsibility/single-responsibility.component.ts```
+- Angular / Info Goal Component: ```components/info-goal/info-goal.component.ts```
+- React / Single responsibility page: ```pages/single-responsibility/SingleResponsibility.tsx```
+- React / Info Goal Component: ```components/info-goal/InfoGoal.tsx```
+
+On page "Single responsibility page" you will see a implementation of goals,
+which is using a generic component named "Info Goal Component".
+
+In "Info Goal Component" component we are using Single Responsibility principle due to the only responsibility of this component is to show the goal information. That means it can't manipulate data directly, instead it receives data from the parent through inputs.
 
 ---
 
-### React
-**react-design-patterns/** folder should be run through Vite server to see demos.
